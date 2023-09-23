@@ -1,7 +1,7 @@
 # Exoplanet project
 
 ## About the project
-We are working with a data provided by **NASA** from **Kepler** telescope, which discovered many planets in the Universe and filtered and found out habitable ones and that's not all. We are planning to complete launch missions to discover those planets together in a very beautiful scientefic friendly web app 😊.
+We are working with a data provided by **NASA** from **Kepler** telescope, which discovered many planets in the Universe and we filtered and found out habitable ones and that's not all. We are planning to complete launch missions to discover those planets together in a very beautiful scientefic friendly web app 😊.
 
 ## Architecture
 
