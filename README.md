@@ -5,7 +5,7 @@ We are working with a data provided by **NASA** from **Kepler** telescope, which
 
 ## Architecture
 
-A couple of words about the _architecture_ which a bit differs. The app has 2 parts **client** and **server** which are controlled by their `package.json` files, but we have one more `package.json` which the same for both of them and serves both of them. Yes we are serving them from one file and in addition we build our **client** side inside of **server** to serve it with **_express_** under the same port on `localhost`.
+A couple of words about the _architecture_ which a bit differs. The app has 2 parts **client** and **server** which are controlled by their `package.json` files, but we have one more `package.json` which is the same for both of them and serves both of them. Yes we are serving them from one file and in addition we build our **client** side inside of **server** to serve it with **_express_** under the same port on `localhost`.
 
 ### Stack
 - Frontend
