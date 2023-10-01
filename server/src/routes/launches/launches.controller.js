@@ -5,13 +5,18 @@ const {
   abortLaunchById,
 } = require('../../models/launches.model');
 
+const { getPagination } = require('../../services/query');
+
 // whatever has http uses req and res
 async function httpGetAllLaunches(req, res) {
   // getAllLaunches function has been created for
   // Data access layer functioning
   // As controller shouldn't do work, but anly take it
   // from DSL and return
-  return res.status(200).json(await getAllLaunches());
+  const { skip, limit } = getPagination(req.query);
+  const launches = await getAllLaunches(skip, limit);
+  
+  return res.status(200).json(launches);
 }
 
 async function httpAddNewLaunch(req, res) {
